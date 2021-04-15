@@ -5,5 +5,5 @@ module.exports = {
     require('postcss-nested'),
     require('postcss-custom-properties'),
     require('autoprefixer'),
-  ]
+  ],
 }
