@@ -1,0 +1,9 @@
+section {
+  &.hero {
+    @apply bg-gradient-to-br from-blue-600 to-green-600 h-screen;
+
+    .container {
+      @apply flex flex-col items-center justify-center;
+    }
+  }
+}

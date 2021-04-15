@@ -1,0 +1,17 @@
+@layer base {
+  body {
+    @apply bg-background;
+  }
+
+  main {
+    >section {
+      &:first-of-type {
+        @apply pt-20;
+      }
+    }
+  }
+
+  .container {
+    @apply max-w-7xl m-auto;
+  }
+}

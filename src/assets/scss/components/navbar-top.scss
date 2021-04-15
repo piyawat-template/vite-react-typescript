@@ -1,0 +1,23 @@
+.navbar-top {
+  @apply p-5 fixed w-full h-20;
+
+  .container {
+    @apply flex items-center justify-between w-full;
+  }
+
+  .brand-logo {
+    img {
+      @apply object-cover square-14;
+    }
+  }
+
+  .navbar-menu {
+    >.nav-item {
+      @apply px-5 py-2 border border-transparent rounded-lg ml-2 text-gray-300 transition-all duration-500;
+
+      &:hover {
+        @apply border-gray-300 bg-white bg-opacity-10 text-white shadow-lg;
+      }
+    }
+  }
+}

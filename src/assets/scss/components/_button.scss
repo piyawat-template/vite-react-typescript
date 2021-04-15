@@ -1,0 +1,16 @@
+.button {
+  @apply px-5 py-2 rounded-lg border;
+
+  &.is-primary {
+    @apply bg-white transition-all duration-500 font-semibold text-black;
+
+    &:hover {
+      @apply shadow-lg transform -translate-y-1;
+    }
+  }
+
+  &:focus,
+  &:active {
+    @apply outline-none;
+  }
+}
