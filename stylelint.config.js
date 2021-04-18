@@ -20,22 +20,9 @@ module.exports = {
           'screen',
           'layer',
           'import',
-          'screen',
           'mixin',
           'include',
         ],
-      },
-    ],
-    'selector-type-no-unknown': [
-      true,
-      {
-        ignoreTypes: ['ion-icon'],
-      },
-    ],
-    'selector-pseudo-element-no-unknown': [
-      true,
-      {
-        ignorePseudoElements: ['v-deep'],
       },
     ],
     'declaration-block-trailing-semicolon': null,

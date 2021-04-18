@@ -15,7 +15,8 @@
     >.nav-item {
       @apply px-5 py-2 border border-transparent rounded-lg ml-2 text-gray-300 transition-all duration-500;
 
-      &:hover {
+      &:hover,
+      &.active {
         @apply border-gray-300 bg-white bg-opacity-10 text-white shadow-lg;
       }
     }

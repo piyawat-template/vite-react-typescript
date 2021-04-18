@@ -1,7 +1,7 @@
 import '../assets/scss/components/navbar-top.scss'
 
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 function NavbarTop() {
   return (
@@ -12,12 +12,20 @@ function NavbarTop() {
         </Link>
 
         <div className="navbar-menu">
-          <Link to="/" className="nav-item">
+          <NavLink
+            to="/"
+            className="nav-item"
+            isActive={(match, location) => {
+              if (!match) {
+                return false
+              }
+              return location.pathname === '/'
+            }}>
             Home
-          </Link>
-          <Link to="/about" className="nav-item">
+          </NavLink>
+          <NavLink to="/about" className="nav-item" activeClassName="active">
             About
-          </Link>
+          </NavLink>
         </div>
       </div>
     </header>
